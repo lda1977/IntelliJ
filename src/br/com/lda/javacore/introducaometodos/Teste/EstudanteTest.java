@@ -6,10 +6,18 @@ public class EstudanteTest {
     public static void main(String[] args){
         /* Criar uma variavel de referencia e instaciar o OBJ */
         Estudante _objEst = new Estudante();
-        _objEst.nome = "Lucas";
-        _objEst.idade = 21;
-        _objEst.notas = new double[]{8,7,9.5};
+
+        _objEst.setNome("Lais");
+        _objEst.setIdade(34);
+        _objEst.setNotas(new double[]{8,7,9.5});
+        /**
+         * _objEst.nome = "Lucas";
+         * _objEst.idade = 21;
+         * _objEst.notas = new double[]{8,7,9.5}; */
+
         _objEst.imprimedados();
+        _objEst.tirarMedia();
+        System.out.println(_objEst.getNome());
 
     }
 }
