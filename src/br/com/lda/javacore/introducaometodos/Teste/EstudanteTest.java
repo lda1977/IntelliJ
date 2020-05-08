@@ -18,6 +18,7 @@ public class EstudanteTest {
         _objEst.imprimedados();
         _objEst.tirarMedia();
         System.out.println(_objEst.getNome());
+        System.out.println("Aprovado?: "+_objEst.isAprovado());
 
     }
 }

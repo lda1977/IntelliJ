@@ -5,6 +5,7 @@ public class Estudante {
     private String nome;
     private int idade;
     private double[] notas;
+    private boolean aprovado;
 
     /* Metodos */
     public void imprimedados() {
@@ -33,10 +34,13 @@ public class Estudante {
 
         /* Se aluno for maior que 6 */
         if (media > 6) {
+            this.aprovado = true;
             System.out.println("\nA média é: " + media + " situação é Aprovado");
             return;
+        } else {
+            this.aprovado = false;
+            System.out.println("\nA média é: " + media + " situação é Reprovado");
         }
-        System.out.println("\nA média é: " + media + " situação é Reprovado");
     }
 
     /* Metodos de acesso Set and Get */
@@ -62,6 +66,17 @@ public class Estudante {
 
     public double[] getNotas() {
         return this.notas;
+    }
+
+    /** não podemos colocar o Set
+     *
+     * public void setAprovado(boolean aprovadoP){
+     *      this.aprovado = aprovadoP;
+     * }
+     */
+    /* Para valores Boolean usase o IS */
+    public boolean isAprovado(){
+        return this.aprovado;
     }
 
 }
