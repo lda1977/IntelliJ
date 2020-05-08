@@ -8,6 +8,11 @@ public class Funcionario {
     /* Novo Atributo para forçar a sobrecarga */
     private String rg;
 
+    /* Construtor */
+    public Funcionario(String nomeC){
+        this.nome = nomeC;
+    }
+
     public void chamaInicio(String nomeC, String cpfC, double salarioC) {
         this.nome = nomeC;
         this.cpf = cpfC;

@@ -5,7 +5,8 @@ import br.com.lda.javacore.sobrecargametodos.Classes.Funcionario;
 public class FuncionarioTest {
     public static void main(String[] agrs) {
         /* Variavel de referencia _objFunc e objeto Funcionario */
-        Funcionario _objFunc = new Funcionario();
+        Funcionario _objFunc = new Funcionario("Juca");
+
         /* Usando Sobrecarga*/
         _objFunc.chamaInicio("Juliana lares", "784512-9", 4565, "45871");
 
