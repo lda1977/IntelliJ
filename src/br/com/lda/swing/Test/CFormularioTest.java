@@ -27,8 +27,6 @@ public class CFormularioTest {
 
         p.add(b);
 
-
-
         f.add(p);
         f.setVisible(true);
 
