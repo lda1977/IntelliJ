@@ -6,7 +6,7 @@ public class Carro {
     private String nome;
     private double velocidadeMaxima;
     /* Membro da Classe não é mais do OBJ */
-    public static double velocidadeLimite = 240;
+    private static double velocidadeLimite = 240;
 
     /***************
      * Metodo Imprime
@@ -21,9 +21,9 @@ public class Carro {
     /**************
      * Construtores
      * ************/
-    public Carro(String nome, double velocidadeMaxima) {
-        this.nome = nome;
-        this.velocidadeMaxima = velocidadeMaxima;
+    public Carro(String nomeP, double velocidadeMaximaP) {
+        this.nome = nomeP;
+        this.velocidadeMaxima = velocidadeMaximaP;
     }
 
     public Carro() {
@@ -32,18 +32,23 @@ public class Carro {
     /*************
      * Metodos Set
      * ***********/
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nomeP) {
+        this.nome = nomeP;
     }
 
-    public void setVelocidadeMaxima(double velocidadeMaxima) {
-        this.velocidadeMaxima = velocidadeMaxima;
+    public void setVelocidadeMaxima(double velocidadeMaximaP) {
+        this.velocidadeMaxima = velocidadeMaximaP;
     }
 
     /*
     public void setVelocidadeLimite(double velocidadeLimite) {
         this.velocidadeLimite = velocidadeLimite;
     }
+     */
+    public static void setVelocidadeLimite(double velocidadeLimiteP) {
+        Carro.velocidadeLimite = velocidadeLimiteP;
+    }
+
     /*
     /**************
      * Metodos Get
@@ -55,9 +60,13 @@ public class Carro {
     public double getVelocidadeMaxima() {
         return velocidadeMaxima;
     }
+
     /*
     public double getVelocidadeLimite() {
         return velocidadeLimite;
     }
     */
+    public static double getVelocidadeLimite() {
+        return velocidadeLimite;
+    }
 }
