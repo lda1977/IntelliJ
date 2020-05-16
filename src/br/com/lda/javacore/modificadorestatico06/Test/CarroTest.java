@@ -13,6 +13,7 @@ public class CarroTest {
         _objC.imprime();
 
         /* Modificando a variavel Static */
+        _objA.velocidadeLimite = 180;
         Carro.velocidadeLimite = 200;
 
         _objA.imprime();

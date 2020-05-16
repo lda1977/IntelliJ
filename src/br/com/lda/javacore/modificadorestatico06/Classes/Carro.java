@@ -24,51 +24,47 @@ public class Carro {
     }
 
     public void imprime() {
-        System.out.println("Marca " + this.nome);
-        System.out.println("Data de Fabricação " + this.data);
-        System.out.println("Modelo " + this.modelo);
-        System.out.println("Serie " + this.serie);
+        //System.out.println("--------------------");
+        System.out.println("-Marca " + this.nome);
+        //System.out.println("Data de Fabricação " + this.data);
+        //System.out.println("Modelo " + this.modelo);
+        //System.out.println("Serie " + this.serie);
         System.out.println("Velocidade Máxima " + this.velocidadeMaxima);
+        //System.out.println("Velocidade Limite " + this.velocidadeLimite);
         System.out.println("Velocidade Limite " + velocidadeLimite);
     }
 
     /* Metodos Set and Get */
+    /* SET */
     public String getNome() {
         return nome;
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nomeP) {
+        this.nome = nomeP;
+    }
+    public void setData(String dataP) {
+        this.data = dataP;
+    }
+    public void setModelo(String modeloP) {
+        this.modelo = modeloP;
+    }
+    public void setSerie(String serieP) {
+        this.serie = serieP;
     }
 
+    /* GET */
     public String getData() {
         return data;
     }
-
-    public void setData(String data) {
-        this.data = data;
-    }
-
     public String getModelo() {
         return modelo;
     }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
     public String getSerie() {
         return serie;
     }
-
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
-
     public double getVelocidadeMaxima() {
         return velocidadeMaxima;
     }
-
     public void setVelocidadeMaxima(double velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
     }
