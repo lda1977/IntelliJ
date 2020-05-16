@@ -15,7 +15,7 @@ public class Carro {
         System.out.println("_______________");
         System.out.println("Nome " + this.nome);
         System.out.println("VelMaxima " + this.velocidadeMaxima);
-        System.out.println("VelLimite " + this.velocidadeLimite);
+        System.out.println("VelLimite " + velocidadeLimite);
     }
 
     /**************
