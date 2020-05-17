@@ -23,7 +23,14 @@ public class Seminario {
      * *****/
     public void print() {
         System.out.println("Título: " + this.titulo);
-        System.out.println("Professor Palestrante: " + this.professor.getNome());
+
+
+        if (this.professor!= null) {
+            System.out.println("Professor Palestrante: " + this.professor.getNome());
+        } else {
+            System.out.println("Nenhum professor cadastrado para esse seminario!!!");
+        }/* Fim IF*/
+
         if (this.local != null) {
             System.out.println("Local e Rua " + this.local.getRua() + "Bairro " + this.local.getBairro());
         } else {
