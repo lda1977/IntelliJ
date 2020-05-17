@@ -1,10 +1,33 @@
 package br.com.lda.javacore.Hheranca.Classes;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
+    protected String nome;
+    protected String cpf;
     /* Herança */
-    private Endereco endereco;
+    protected Endereco endereco;
+
+
+    public Pessoa(String nome) {
+        System.out.println("Dentro do construtor pessoas");
+        this.nome = nome;
+    }
+
+    static {
+        System.out.println("Dentro do bloco de inicialização STATIC de pessoa ");
+    }
+
+    {
+        System.out.println("Bloco de inicialização 1 de pessoa ");
+    }
+
+    {
+        System.out.println("Bloco de inicialização 2 de pessoa");
+    }
+
+    public Pessoa(String nome, String cpf) {
+        this(nome);
+        this.cpf = cpf;
+    }
 
     public void print() {
         System.out.println("Nome " + this.nome);
