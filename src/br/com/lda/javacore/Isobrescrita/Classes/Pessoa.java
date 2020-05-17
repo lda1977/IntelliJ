@@ -4,12 +4,22 @@ public class Pessoa {
     private String nome;
     private int idade;
 
-    @Override
-    /* Classe do Objcte Java */
-    public String toString(){
 
-        return "Nome "+nome+" Idade "+idade;
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
     }
+
+    //
+//    @Override
+//    /* Classe do Objcte Java */
+//    public String toString(){
+//
+//        return "Nome "+nome+" Idade "+idade;
+//    }
 
 
 
