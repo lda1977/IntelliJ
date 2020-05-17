@@ -1,7 +1,7 @@
 package br.com.lda.javacore.Fmodificadorestatico.Classes;
 
 public class Cliente {
-    // 0- Bloco de inicializaçõa é executado quando a JVM carrega a classe (é executado apenas um vez)
+    // 0- Bloco de inicializaçõa static é executado quando a JVM carrega a classe (é executado apenas um vez)
     // 1- Alocado espaço na memoria para o obj, que será criado
     // 2- Cada atributo de Class é criado e inicializado com seus valores default ou inseridor
     // 3- Bloco de inicialização é executado
